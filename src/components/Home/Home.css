@@ -1,0 +1,172 @@
+html{
+  scroll-behavior: smooth !important;
+}
+
+.container {
+  padding: 30px;
+}
+
+.title{
+  text-align: center;
+  margin: auto;
+}
+
+.title h1{
+  font-weight: 900;
+  font-size: 40px;
+  padding: 75px 0px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #151515
+}
+
+.title div{
+  background-color: #009efd;
+  height: 5px;
+  width: 100px;
+  margin: 5px auto 75px auto;
+}
+
+.innerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.landingPage{
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  z-index: 9;
+}
+
+.landingInfo{
+  position: absolute;
+  top: 40%;
+  left: 3%;
+}
+
+.landingPage h1{
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.landingPage p{
+  width: 50%;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.landingInfo a{
+  color: white;
+  background-color: #009efd;
+  border: 1px solid #009efd;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: .25s ease;
+}
+
+.landingInfo a:hover{
+  color: #009efd;
+  border: 1px solid #009efd;
+  background-color: transparent;
+}
+
+.Top{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  background-color: #009efd;
+  border: 1px solid #009efd;
+  font-size: 25px;
+  border-radius: 50px;
+  width:50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  transition: .25s ease;
+}
+
+.Top:hover{
+  background-color: white;
+  color: #009efd;
+  border: 1px solid #009efd;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: red;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 800px){
+  .landingInfo{
+    position: absolute;
+    top: 30%;
+  }
+
+  .landingPage h1{
+    padding: 0 40px 0 20px;
+    width: 100%;
+  }
+
+  .landingPage p{
+    width: 100%;
+    padding: 0 40px 0 20px;
+  }
+
+  .landingInfo a{
+    margin-left: 20px;
+  }
+
+  .innerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

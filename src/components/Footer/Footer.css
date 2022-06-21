@@ -1,0 +1,36 @@
+.footer{
+    width: 100%;
+    background-color: #e2e2e2;
+    padding: 20px 0 0 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer img{
+    width: 20rem;
+    margin: 20px auto;
+}
+
+.linksDiv{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.link{
+    color: #009efd;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+    transition: .15s;
+}
+
+.link:hover{
+    color: #2af598;
+}
+
+.cpDiv{
+    background-color: #c5c5c5;
+    margin-top: 20px;
+    padding: 10px;
+}

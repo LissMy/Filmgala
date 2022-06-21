@@ -1,0 +1,44 @@
+.container {
+  height: 350px;
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px lightgray;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent,  rgba(0, 0, 0, 0.8), black);
+  transform: translateY(100%);
+  transition: 300ms;
+  font-size: 16px;
+  overflow: hidden;
+  color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container:hover p {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 800px){
+  .container{
+    width: 200px;
+  }
+}
