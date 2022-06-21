@@ -43,3 +43,20 @@
 .link:hover a {
   color: #2af598;
 }
+
+.search-bar{
+  width: 200px;
+  height: 30px;
+  margin: 5px;
+}
+.submit{
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: cyan;
+  color: whitesmoke;
+  font-size: 18px;
+  position: relative;
+  top: 3.5px;
+  border-radius: 20%;
+}
