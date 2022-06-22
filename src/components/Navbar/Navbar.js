@@ -25,22 +25,11 @@ const Navbar = () => {
       </Link>
 
       <div className="right">
-          {/* search */}
-      <section className='section'>
-    <div className='secction-center'>
-      <form>
-        <div className='form-control'>
-          <input type="text" placeholder='Enter movie' onChange={handleChange}  className="search-bar"/>
-          <button type="submit" className="submit"><MdSearch /></button>
-        </div>
-      </form>
-    </div>
-  </section>
         <p className="link">
           <Link to="/explore">Explore</Link>
         </p>
         <p className="link">
-          <Link to="/favorites">Favorites</Link>
+          <Link to="/favorites">Favourites</Link>
         </p>
       </div>
     </div>

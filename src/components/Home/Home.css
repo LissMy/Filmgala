@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -6,12 +6,12 @@ html{
   padding: 30px;
 }
 
-.title{
+.title {
   text-align: center;
   margin: auto;
 }
 
-.title h1{
+.title h1 {
   font-weight: 900;
   font-size: 40px;
   padding: 75px 0px 0 0;
@@ -20,7 +20,7 @@ html{
   color: #151515
 }
 
-.title div{
+.title div {
   background-color: #009efd;
   height: 5px;
   width: 100px;
@@ -35,7 +35,10 @@ html{
   align-items: center;
 }
 
-.landingPage{
+.landingPage {
+  background-image:
+    linear-gradient(to left, transparent, black),
+    url('Spiderman.png');
   background-position: center;
   width: 100%;
   height: 600px;
@@ -48,13 +51,13 @@ html{
   z-index: 9;
 }
 
-.landingInfo{
+.landingInfo {
   position: absolute;
   top: 40%;
   left: 3%;
 }
 
-.landingPage h1{
+.landingPage h1 {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 25px;
@@ -62,14 +65,14 @@ html{
   font-size: 40px;
 }
 
-.landingPage p{
+.landingPage p {
   width: 50%;
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 30px;
 }
 
-.landingInfo a{
+.landingInfo a {
   color: white;
   background-color: #009efd;
   border: 1px solid #009efd;
@@ -81,13 +84,14 @@ html{
   transition: .25s ease;
 }
 
-.landingInfo a:hover{
+.landingInfo a:hover {
   color: #009efd;
   border: 1px solid #009efd;
   background-color: transparent;
 }
 
-.Top{
+
+.Top {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -96,14 +100,14 @@ html{
   border: 1px solid #009efd;
   font-size: 25px;
   border-radius: 50px;
-  width:50px;
+  width: 50px;
   height: 50px;
   text-align: center;
   padding-top: 10px;
   transition: .25s ease;
 }
 
-.Top:hover{
+.Top:hover {
   background-color: white;
   color: #009efd;
   border: 1px solid #009efd;
@@ -142,23 +146,23 @@ html{
 }
 
 
-@media screen and (max-width: 800px){
-  .landingInfo{
+@media screen and (max-width: 800px) {
+  .landingInfo {
     position: absolute;
     top: 30%;
   }
 
-  .landingPage h1{
+  .landingPage h1 {
     padding: 0 40px 0 20px;
     width: 100%;
   }
 
-  .landingPage p{
+  .landingPage p {
     width: 100%;
     padding: 0 40px 0 20px;
   }
 
-  .landingInfo a{
+  .landingInfo a {
     margin-left: 20px;
   }
 

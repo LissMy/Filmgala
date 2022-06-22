@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaChevronUp } from "react-icons/fa"
 import "./Home.css";
-import Slider from "../slider/Slider";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import { getPopularMovies } from "../../api/movies";
 
@@ -13,7 +10,7 @@ import MovieCard from "../MovieCard/MovieCard";
 const imagePrefixUrl = "http://image.tmdb.org/t/p/w500";
 
 const Home = (props) => {
-  
+
 
   const [popularMovies, setPopularMovies] = useState([]);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -59,7 +56,13 @@ const Home = (props) => {
         "Loading...."
       ) : (
         <Paginate onIntersection={(isOnEnd) => setIsNearEnd(isOnEnd)}>
-          <Slider movie={movie} />
+          <div className="landingPage" id="landingPage">
+            <div className="landingInfo">
+              <h1>Spider-man: No way home</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore fugit hic fuga dolores quisquam esse natus quam Dolore fugit hic fuga dolores quisquam esse natus quam.</p>
+              <a href="#title">See More</a>
+            </div>
+          </div>
           <div className="title" id="title">
             <h1>Most Watched</h1>
             <div></div>
