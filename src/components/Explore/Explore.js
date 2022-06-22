@@ -6,7 +6,7 @@ import Paginate from "../Paginate/Paginate";
 
 import styles from "./Explore.module.css";
 
-const Explore = () => {
+const Explore = (props) => {
   const [allGenres, setAllGenres] = useState([]);
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [movies, setMovies] = useState([]);
@@ -94,7 +94,7 @@ const Explore = () => {
       <Paginate onIntersection={(isNearEnd) => setIsNearEnd(isNearEnd)}>
         <div className={styles.body}>
           {movies.map((item, index) => (
-            <MovieCard movie={item} key={item.id + index + ""} />
+            <MovieCard addFavoriteHandler={props.addFavoriteHandler} movie={item} key={item.id + index + ""} />
           ))}
           {isMoreMoviesLoading && <b>Loading...</b>}
         </div>

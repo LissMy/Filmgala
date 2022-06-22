@@ -27,6 +27,18 @@ export const getGenre = async () => {
   }
 };
 
+export const getUpcomingMovies = async () => {
+  try {
+    const res = await fetch(`${apiDomain}/movie/upcoming?api_key=${apiKey}`);
+
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.error(err);
+    return false;
+  }
+};
+
 export const getMovieImages = async (id) => {
   try {
     const res = await fetch(

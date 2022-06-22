@@ -13,6 +13,8 @@ import MovieCard from "../MovieCard/MovieCard";
 const imagePrefixUrl = "http://image.tmdb.org/t/p/w500";
 
 const Home = (props) => {
+  
+
   const [popularMovies, setPopularMovies] = useState([]);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [totalPages, setTotalPages] = useState(1);
@@ -54,17 +56,17 @@ const Home = (props) => {
   return (
     <div className="container">
       {!isDataLoaded ? (
-        "Loading..."
+        "Loading...."
       ) : (
         <Paginate onIntersection={(isOnEnd) => setIsNearEnd(isOnEnd)}>
-          <Slider />
+          <Slider movie={movie} />
           <div className="title" id="title">
             <h1>Most Watched</h1>
             <div></div>
           </div>
           <div className="innerContainer">
             {popularMovies.map((item, index) => (
-              <MovieCard movie={item} key={item.id + index + ""} />
+              <MovieCard addFavoriteHandler={props.addFavoriteHandler} removeFavoriteHandler={props.removeFavoriteHandler} movie={item} key={item.id + index + ""} />
             ))}
             {isMoreMoviesLoading && <b>Loading...</b>}
           </div>

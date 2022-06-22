@@ -5,6 +5,23 @@
   position: relative;
   overflow: hidden;
   box-shadow: 1px 1px 20px lightgray;
+  position: relative;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.heartIcon:hover {
+  transform: scale(1.15);
 }
 
 .container img {

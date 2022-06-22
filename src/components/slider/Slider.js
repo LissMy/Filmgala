@@ -10,19 +10,18 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-const Slider = () => {
+const Slider = (props) => {
+  const movie = props?.movie;
+  console.log(movie)
   return (
     <>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        {movie?.map(mov => (
+          <SwiperSlide>{mov.name}</SwiperSlide>
+        )) }
+        
         <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        
       </Swiper>
     </>
   );
