@@ -45,9 +45,15 @@
 }
 
 .search-bar{
+<<<<<<< HEAD
   width: 150px;
   height: 30px;
   border-right: none;
+=======
+  width: 200px;
+  height: 30px;
+  margin: 5px;
+>>>>>>> 2b9ad48084166af75085360ec4caa3447413b767
 }
 .submit{
   height: 30px;
@@ -58,5 +64,9 @@
   font-size: 18px;
   position: relative;
   top: 3.5px;
+<<<<<<< HEAD
   border-radius:  0 20% 20% 0;
+=======
+  border-radius: 20%;
+>>>>>>> 2b9ad48084166af75085360ec4caa3447413b767
 }
